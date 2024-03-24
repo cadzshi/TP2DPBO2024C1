@@ -166,7 +166,9 @@ public class Menu extends JFrame{
             String jenisKelamin = jenisKelaminComboBox.getSelectedItem().toString();
             String peminatan = peminatanComboBox.getSelectedItem().toString();
 
-            String checkQuery = "SELECT * FROM mahasiswa WHERE nim = '" + nim + "'";
+//            String checkQuery = "SELECT * FROM mahasiswa WHERE nim = '" + nim + "'";
+//            database.insertUpdateDeleteQuery(checkQuery);
+
 
             if (nim.isEmpty() || nama.isEmpty() || jenisKelamin.isEmpty() || peminatan.isEmpty()){
                 JOptionPane.showMessageDialog(null, "Data tidak boleh kosong!");
